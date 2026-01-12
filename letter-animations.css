@@ -1,0 +1,180 @@
+/* Плавная анимация появления букв для страницы "Приглашение" */
+.letter-gather {
+    display: inline-block;
+    opacity: 0;
+    animation: softGatherLetter 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ПРИГЛАШЕНИЕ - плавное появление снизу */
+.invitation-title .letter-gather:nth-child(1) { animation-delay: 0.1s; }
+.invitation-title .letter-gather:nth-child(2) { animation-delay: 0.15s; }
+.invitation-title .letter-gather:nth-child(3) { animation-delay: 0.2s; }
+.invitation-title .letter-gather:nth-child(4) { animation-delay: 0.25s; }
+.invitation-title .letter-gather:nth-child(5) { animation-delay: 0.3s; }
+.invitation-title .letter-gather:nth-child(6) { animation-delay: 0.35s; }
+.invitation-title .letter-gather:nth-child(7) { animation-delay: 0.4s; }
+.invitation-title .letter-gather:nth-child(8) { animation-delay: 0.45s; }
+.invitation-title .letter-gather:nth-child(9) { animation-delay: 0.5s; }
+.invitation-title .letter-gather:nth-child(10) { animation-delay: 0.55s; }
+.invitation-title .letter-gather:nth-child(11) { animation-delay: 0.6s; }
+
+/* 16 АПРЕЛЯ - плавное появление */
+.date-large .letter-gather:nth-child(1) { animation-delay: 0.7s; }
+.date-large .letter-gather:nth-child(2) { animation-delay: 0.75s; }
+.date-large .letter-gather:nth-child(3) { animation-delay: 0.8s; }
+.date-large .letter-gather:nth-child(4) { animation-delay: 0.85s; }
+.date-large .letter-gather:nth-child(5) { animation-delay: 0.9s; }
+.date-large .letter-gather:nth-child(6) { animation-delay: 0.95s; }
+.date-large .letter-gather:nth-child(7) { animation-delay: 1s; }
+.date-large .letter-gather:nth-child(8) { animation-delay: 1.05s; }
+
+/* Роспись */
+.event-section:nth-child(3) .event-title .letter-gather:nth-child(1) { animation-delay: 1.1s; }
+.event-section:nth-child(3) .event-title .letter-gather:nth-child(2) { animation-delay: 1.15s; }
+.event-section:nth-child(3) .event-title .letter-gather:nth-child(3) { animation-delay: 1.2s; }
+.event-section:nth-child(3) .event-title .letter-gather:nth-child(4) { animation-delay: 1.25s; }
+.event-section:nth-child(3) .event-title .letter-gather:nth-child(5) { animation-delay: 1.3s; }
+.event-section:nth-child(3) .event-title .letter-gather:nth-child(6) { animation-delay: 1.35s; }
+.event-section:nth-child(3) .event-title .letter-gather:nth-child(7) { animation-delay: 1.4s; }
+
+/* Торжество */
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(1) { animation-delay: 1.5s; }
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(2) { animation-delay: 1.55s; }
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(3) { animation-delay: 1.6s; }
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(4) { animation-delay: 1.65s; }
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(5) { animation-delay: 1.7s; }
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(6) { animation-delay: 1.75s; }
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(7) { animation-delay: 1.8s; }
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(8) { animation-delay: 1.85s; }
+.event-section:nth-child(4) .event-title .letter-gather:nth-child(9) { animation-delay: 1.9s; }
+
+@keyframes softGatherLetter {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анимация для страницы "Дресс-код" */
+.section-4 .content-card {
+    opacity: 0;
+    animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+}
+
+.section-4 h2 {
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+
+/* Анимация слов в тексте дресс-кода */
+.dresscode-word {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInUpWord 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Используем nth-of-type для правильного подсчета (игнорируя <br>) */
+.dresscode-text .dresscode-word:nth-of-type(1) { animation-delay: 0.3s; }
+.dresscode-text .dresscode-word:nth-of-type(2) { animation-delay: 0.35s; }
+.dresscode-text .dresscode-word:nth-of-type(3) { animation-delay: 0.4s; }
+.dresscode-text .dresscode-word:nth-of-type(4) { animation-delay: 0.45s; }
+.dresscode-text .dresscode-word:nth-of-type(5) { animation-delay: 0.5s; }
+.dresscode-text .dresscode-word:nth-of-type(6) { animation-delay: 0.55s; }
+.dresscode-text .dresscode-word:nth-of-type(7) { animation-delay: 0.6s; }
+.dresscode-text .dresscode-word:nth-of-type(8) { animation-delay: 0.65s; }
+.dresscode-text .dresscode-word:nth-of-type(9) { animation-delay: 0.7s; }
+.dresscode-text .dresscode-word:nth-of-type(10) { animation-delay: 0.75s; }
+.dresscode-text .dresscode-word:nth-of-type(11) { animation-delay: 0.8s; }
+.dresscode-text .dresscode-word:nth-of-type(12) { animation-delay: 0.85s; }
+.dresscode-text .dresscode-word:nth-of-type(13) { animation-delay: 0.9s; }
+.dresscode-text .dresscode-word:nth-of-type(14) { animation-delay: 0.95s; }
+.dresscode-text .dresscode-word:nth-of-type(15) { animation-delay: 1s; }
+.dresscode-text .dresscode-word:nth-of-type(16) { animation-delay: 1.05s; }
+.dresscode-text .dresscode-word:nth-of-type(17) { animation-delay: 1.1s; }
+.dresscode-text .dresscode-word:nth-of-type(18) { animation-delay: 1.15s; }
+.dresscode-text .dresscode-word:nth-of-type(19) { animation-delay: 1.2s; }
+.dresscode-text .dresscode-word:nth-of-type(20) { animation-delay: 1.25s; }
+.dresscode-text .dresscode-word:nth-of-type(21) { animation-delay: 1.3s; }
+.dresscode-text .dresscode-word:nth-of-type(22) { animation-delay: 1.35s; }
+.dresscode-text .dresscode-word:nth-of-type(23) { animation-delay: 1.4s; }
+.dresscode-text .dresscode-word:nth-of-type(24) { animation-delay: 1.45s; }
+.dresscode-text .dresscode-word:nth-of-type(25) { animation-delay: 1.5s; }
+.dresscode-text .dresscode-word:nth-of-type(26) { animation-delay: 1.55s; }
+.dresscode-text .dresscode-word:nth-of-type(27) { animation-delay: 1.6s; }
+.dresscode-text .dresscode-word:nth-of-type(28) { animation-delay: 1.65s; }
+.dresscode-text .dresscode-word:nth-of-type(29) { animation-delay: 1.7s; }
+.dresscode-text .dresscode-word:nth-of-type(30) { animation-delay: 1.75s; }
+
+@keyframes fadeInUpWord {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-4 .dresscode-photo:nth-child(1) {
+    opacity: 0;
+    animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+
+.section-4 .dresscode-photo:nth-child(2) {
+    opacity: 0;
+    animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.7s forwards;
+}
+
+.section-4 .dresscode-photo:nth-child(3) {
+    opacity: 0;
+    animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.9s forwards;
+}
+
+/* Анимация для страницы "Подтверждение" */
+.section-5 h2 {
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+
+.section-5 .confirmation-text {
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+}
+
+.section-5 .contacts {
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+
+.section-5 .final-words {
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.7s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
